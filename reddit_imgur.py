@@ -8,7 +8,8 @@ program is run, in a folder named after the specified subreddit.
 __author__ = "Nick Condo"
 __date__ = "11/22/2015"
 
-import praw, os
+import praw
+import os
 
 def make_dir(dir):
     """Creates the directory to save the photos if it doesn't already exist"""
