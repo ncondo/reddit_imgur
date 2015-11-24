@@ -75,8 +75,8 @@ if __name__ == '__main__':
     elif len(sys.argv) == 2:
         get_submissions(sys.argv[1])
     elif len(sys.argv) == 3:
-        get_submissions(sys.argv[1], sys.argv[2])
+        get_submissions(sys.argv[1], int(sys.argv[2]))
     elif len(sys.argv) == 4:
-        get_submissions(sys.argv[1], sys.argv[2], sys.argv[3])
+        get_submissions(sys.argv[1], int(sys.argv[2]), int(sys.argv[3]))
     else:
         print('usage: python3 reddit_imgur.py -subreddit --min_score --limit')
