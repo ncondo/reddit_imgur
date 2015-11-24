@@ -68,3 +68,14 @@ def get_submissions(subreddit, min_score=20, limit=20):
             download_image(submission.url, filename)
 
 
+if __name__ == '__main__':
+    if len(sys.argv) == 1:
+        get_submissions('wallpaper')
+    elif len(sys.argv) == 2:
+        get_submissions(sys.argv[1])
+    elif len(sys.argv) == 3:
+        get_submissions(sys.argv[1], sys.argv[2])
+    elif len(sys.argv) == 4:
+        get_submissions(sys.argv[1], sys.argv[2], sys.argv[3])
+    else:
+        print('usage: reddit_imgur.py -subreddit --min_score --limit')
