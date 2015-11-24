@@ -9,6 +9,7 @@ __author__ = "Nick Condo"
 __date__ = "11/22/2015"
 
 import os
+import sys
 import re
 import requests
 import praw
